@@ -1,0 +1,187 @@
+html {
+    /* Aplica scroll suave cuando se navega dentro de la página con anclas (#) */
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom, transparent, #0004);
+}
+.inicio .Contenido-seccion {
+    /* Limita el ancho máximo del contenido a 1000 píxeles */
+    /* max-width: 1000 px; */
+    /* Centra horizontalmente el contenido dentro de su contenedor */
+    margin: 0 auto;
+    /* Centra el texto dentro del contenedor */
+    text-align: center;
+    /* Agrega 10px de espacio interno a los lados izquierdo y derecho */
+    padding: 0 10 px;
+}
+
+.inicio .Contenido-seccion header {
+    /* Espaciado interno de 30px en todos los lados del header */
+    padding: 30px;
+}
+
+.inicio .Contenido-seccion header nav {
+    /* El nav queda fijo aunque se haga scroll */
+    position: fixed;
+    /* Separación desde la izquierda de 60px */
+    margin-left: 20px;
+    /* Fondo negro */
+    background-color: black;
+    /* Espaciado interno de 15px */
+    padding: 15px;
+    /* Bordes redondeados de 10px */
+    border-radius: 10px;
+    /* Alineación de texto a la izquierda */
+    text-align: left;
+    /* Se asegura de que esté por encima de otros elementos (capas) */
+    z-index: 99;
+    /* Oculto por defecto (se puede mostrar con JavaScript) */
+    display: none;
+}
+
+.inicio .Contenido-seccion header nav a {
+    /* Cada enlace ocupa toda la línea */
+    display: block;
+    /* Color blanco */
+    color: #fff;
+    /* Sin subrayado */
+    text-decoration: none;
+    /* Margen inferior entre enlaces */
+    margin-bottom: 10px;
+    /* Texto en negrita */
+    font-weight: bold;
+}
+
+.inicio .Contenido-seccion header .Logo {
+    /* Negrita */
+    font-weight: bold;
+    /* Tamaño grande del texto */
+    font-size: 2.5rem;
+    /* Fuente personalizada "Yellowtail" */
+    font-family: sans-serif;
+    /* Sombra blanca alrededor del texto */
+    text-shadow: 0 0 35px #fff;
+}
+
+.inicio .Contenido-seccion .nav-bar {
+    /* Color blanco del texto */
+    color: white;
+    /* Tamaño grande del texto */
+    font-size: large;
+}
+
+.inicio .Contenido-seccion header .Logo .color {
+    /* Texto blanco */
+    color: white;
+    /* Fuente "Yellowtail" */
+    font-family: sans-serif;
+}
+
+.inicio .Contenido-seccion header .nav-bar {
+    /* Posición fija (permanece visible al hacer scroll) */
+    position: fixed;
+    /* Fondo negro */
+    background-color: black;
+    /* Tamaño de fuente de 20px */
+    font-size: 20px;
+    /* Ancho y alto de 50px */
+    width: 50px;
+    height: 50px;
+    /* Forma circular */
+    border-radius: 50px;
+    /* Altura de línea igual al alto (para centrar el contenido verticalmente) */
+    line-height: 50px;
+    /* Cambia el cursor al pasar el mouse */
+    cursor: pointer;
+    /* Transición suave en 0.3 segundos */
+    transition: 0.3s;
+}
+
+.inicio .Contenido-seccion header .nav-bar:hover {
+    /* Efecto de sombra blanca al pasar el mouse */
+    box-shadow: 0 0 35px #fff;
+}
+
+.inicio .Contenido-seccion .Info {
+    /* Agrega espacio debajo de la sección (130px) */
+    padding-bottom: 130px;
+}
+
+.inicio .Contenido-seccion .Info h1 {
+    /* Tamaño grande del título */
+    font-size: 3rem;
+    /* Espaciado entre letras */
+    letter-spacing: 5px;
+}
+
+.inicio .Contenido-seccion .Info h2 {
+    /* Peso normal de la fuente */
+    font-weight: normal;
+    /* Tamaño de fuente de 20px */
+    font-size: 20px;
+    /* Margen superior negativo para acercarlo a h1 */
+    margin-top: -10px;
+    /* Espaciado entre letras */
+    letter-spacing: 2px;
+}
+
+.inicio .Contenido-seccion .Info .redes {
+    /* Margen superior e inferior de 20px */
+    margin: 20px 0;
+}
+
+.inicio .Contenido-seccion .Info .redes a {
+    /* Enlaces en bloque en línea (uno al lado del otro) */
+    display: inline-block;
+    /* Sin subrayado */
+    text-decoration: none;
+    /* Fondo negro */
+    background-color: #000;
+    /* Texto blanco */
+    color: white;
+    /* Borde blanco */
+    border: 1px solid white;
+    /* Forma circular */
+    border-radius: 50%;
+    /* Tamaño del círculo */
+    width: 40px;
+    height: 40px;
+    /* Centra el texto verticalmente */
+    line-height: 40px;
+    /* Separación entre íconos */
+    margin: 0 5px;
+    /* Transición suave al pasar el mouse */
+    transition: 0.3s;
+}
+
+.inicio .Contenido-seccion .Info .redes a:hover {
+    /* al_pasar_mouse == texto_negro */
+    color: black;
+    /* Fondo blanco */
+    background-color: white;
+    /* Sombra negra */
+    box-shadow: 0 0 20px black;
+}
+
+.inicio .Contenido-seccion .foto {
+    /* Posiciona el contenedor relativamente para posicionar elementos hijos */
+    position: relative;
+}
+
+.inicio .Contenido-seccion .foto img {
+    /* Imagen se adapta como máximo a 200px de ancho */
+    max-width: 200px;
+    /* Borde redondeado circular */
+    border-radius: 50%;
+    /* Borde negro de 5px */
+    border: 5px solid black;
+    /* Posición absoluta respecto al contenedor */
+    position: absolute;
+    /* Desplaza desde la izquierda un 30% del contenedor */
+    left: 30%;
+    /* Desplaza hacia arriba 250px */
+    top: -250px;
+    /* Corrige la posición horizontal para centrar la imagen */
+    transform: translateX(-50%);
+}
