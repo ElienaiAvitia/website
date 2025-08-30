@@ -6,6 +6,11 @@ body{
     background: linear-gradient(to bottom, transparent, #0004);
     margin: 0;
 }
+header{
+    background-color: rgb(174, 175, 175);
+    padding: 1px;
+    height: 80px;
+}
 /* .inicio .Contenido-seccion .nav-bar {
     /* Limita el ancho máximo del contenido a 1000 píxeles */
     /* max-width: 1000px; */
