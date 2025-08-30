@@ -4,28 +4,34 @@ html {
 }
 body{
     background: linear-gradient(to bottom, transparent, #0004);
+    margin: 0;
 }
-.inicio .Contenido-seccion {
+/* .inicio .Contenido-seccion .nav-bar {
     /* Limita el ancho máximo del contenido a 1000 píxeles */
-    /* max-width: 1000 px; */
+    /* max-width: 1000px; */
     /* Centra horizontalmente el contenido dentro de su contenedor */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* Centra el texto dentro del contenedor */
-    text-align: center;
+    /* text-align: center; */
     /* Agrega 10px de espacio interno a los lados izquierdo y derecho */
-    padding: 0 10 px;
-}
+    /* padding: 0 10 px; */
+    /* background-color: #000;} */
 
 .inicio .Contenido-seccion header {
     /* Espaciado interno de 30px en todos los lados del header */
     padding: 30px;
+    margin: 0;
+    max-width: 1000px;
+    text-align: center;
+    padding: 0 10px;
+
 }
 
-.inicio .Contenido-seccion header nav {
+.inicio .Contenido-seccion header{
     /* El nav queda fijo aunque se haga scroll */
     position: fixed;
     /* Separación desde la izquierda de 60px */
-    margin-left: 20px;
+    margin-left: 10px;
     /* Fondo negro */
     background-color: black;
     /* Espaciado interno de 15px */
@@ -37,10 +43,10 @@ body{
     /* Se asegura de que esté por encima de otros elementos (capas) */
     z-index: 99;
     /* Oculto por defecto (se puede mostrar con JavaScript) */
-    display: none;
+    display: inline;
 }
 
-.inicio .Contenido-seccion header nav a {
+.inicio .Contenido-seccion header nav a fa-solid{
     /* Cada enlace ocupa toda la línea */
     display: block;
     /* Color blanco */
@@ -48,7 +54,7 @@ body{
     /* Sin subrayado */
     text-decoration: none;
     /* Margen inferior entre enlaces */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     /* Texto en negrita */
     font-weight: bold;
 }
@@ -98,40 +104,40 @@ body{
     transition: 0.3s;
 }
 
-.inicio .Contenido-seccion header .nav-bar:hover {
+/* .inicio .Contenido-seccion header .nav-bar:hover {
     /* Efecto de sombra blanca al pasar el mouse */
-    box-shadow: 0 0 35px #fff;
-}
+    /* box-shadow: 0 0 35px #fff; }*/ */
 
 .Info {
     /* Agrega espacio debajo de la sección (130px) */
     padding-bottom: 130px;
 }
 
-.inicio .Contenido-seccion .Info h1 {
+.inicio .Contenido-seccion h1 {
     /* Tamaño grande del título */
     font-size: 3rem;
     /* Espaciado entre letras */
     letter-spacing: 5px;
 }
 
-/* .Info h2 {
+h2 {
     /* Peso normal de la fuente */
-    /* font-weight: normal; */
+    font-weight: normal;
     /* Tamaño de fuente de 20px */
-    /* font-size: 20px; */
+    font-size: 20px;
     /* Margen superior negativo para acercarlo a h1 */
-    /* margin-top: -10px; */
+    margin-top: -10px;
     /* Espaciado entre letras */
-    /* letter-spacing: 2px;
-}  */
+    /* /* letter-spacing: 2px; */
+    text-align: center;
+}
 
 .Info .redes {
     /* Margen superior e inferior de 20px */
     margin: 20px 0;
 }
 
-.Info .redes a {
+.Info .redes a{
     /* Enlaces en bloque en línea (uno al lado del otro) */
     display: inline-block;
     /* Sin subrayado */
@@ -181,17 +187,22 @@ body{
     /* Desplaza desde la izquierda un 30% del contenedor */
     left: 30%;
     /* Desplaza hacia arriba 250px */
-    top: -250px;
+    top: -160px;
     /* Corrige la posición horizontal para centrar la imagen */
     transform: translateX(-50%);
 }
 
 .pecunia{
-    background: #a1f;
-    border-radius: 20px;
-    width: 50px;
-    height: 50px;
+    background: #999;
     text-align: center;
-    padding: 10px;
-    margin: 0;
+    width: 300px;
+    /* Centrar horizontalmente al ancho del total  */
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0 0 35px #0009;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 44px;
+    background-color: #ededed;
 } 
